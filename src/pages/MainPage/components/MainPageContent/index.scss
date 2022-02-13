@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 60vh;
+
+
+
+    &__banner {
+        padding: 20px;
+        border-radius: 20px;
+
+        text-align: center;
+        background-color: #4b3b3b;
+
+        &-header {
+            font-size: 30px;
+        }
+        &-content {
+            font-size: 20px;
+        }
+    }
+
+    &__header {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 13px;
+    }
+}

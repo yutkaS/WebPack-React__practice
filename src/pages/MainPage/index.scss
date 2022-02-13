@@ -1,5 +1,4 @@
 .mainPage{
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,4 +6,11 @@
     max-width: 1500px;
     padding: 10px 20px;
     margin: 0 auto;
+
+    color: #d6e5f3;
+    font-family: Arial, sans-serif;
+
+
+    background-image: url("/dist/assets/main-bg.jpg");
+    background-size: cover;
 }
