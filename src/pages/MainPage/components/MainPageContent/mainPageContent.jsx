@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.scss";
+import "./mainPageContent.scss";
 
 const MainPageContent = () => (
     <main className={'main'}>
