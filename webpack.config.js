@@ -29,13 +29,24 @@ module.exports = {
                         loader: MiniCssExtractPlugin.loader,
                     },
                     {
-                        loader: 'css-loader', // translates CSS into CommonJS
+                        loader: "css-loader",
                         options: {
-                            importLoaders: 1
-                        }
+                            url: false,
+                        },
                     },
-                    'sass-loader',
                 ]
+            },
+            {
+                test: /\.(jpe?g|png|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            context: path.resolve(__dirname, 'src/images'),
+                            name: 'assets/[name].[ext]',
+                        },
+                    },
+                ],
             },
         ],
     },

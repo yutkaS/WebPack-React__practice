@@ -1,7 +1,8 @@
 import React from "react";
 
-import '/src/components/style-reset.scss'
-import './mainPage.scss'
+import '/src/components/style-reset.scss';
+import './mainPage.scss';
+import './assets/main-bg.jpg';
 
 import Header from "../../components/Header/header.jsx";
 import MainPageContent from "./components/MainPageContent/mainPageContent.jsx";
