@@ -27,8 +27,8 @@
     "webpack-dev-server": "^4.7.4"
   },
   "scripts": {
-    "start": "isProd=false webpack-dev-server --open --hot",
-    "build": "isProd=true webpack-dev-server webpack"
+    "start": "webpack-dev-server --open --hot",
+    "build": "webpack-dev-server webpack"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
