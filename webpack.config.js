@@ -37,7 +37,7 @@ module.exports = {
                             importLoaders: 1,
                             url: false,
                             modules: {
-                                localIdentName: (process.env.isProd && true ? "'[hash:base64:3]'" : "[local]") ,
+                                localIdentName: (process.env.isProd ? "'[hash:base64:3]'" : "[local]") ,
                             },
                         },
                     },
