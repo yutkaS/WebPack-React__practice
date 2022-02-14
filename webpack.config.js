@@ -2,10 +2,10 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const isProd = process.env.isProd;
-
+const mode = process.env.mode;
+console.log(mode, typeof mode)
 module.exports = {
-    mode: isProd,
+    mode: mode,
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -40,7 +40,7 @@ module.exports = {
                             importLoaders: 1,
                             url: false,
                             modules: {
-                                localIdentName: (isProd && true ? "'[hash:base64:3]'" : "[local]") ,
+                                localIdentName: (mode === 'production' ? "[hash:base64:3]" : "[local]") ,
                             },
                         },
                     },
