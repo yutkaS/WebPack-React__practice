@@ -6,7 +6,6 @@
     max-width: 1500px;
 
 
-
     &__heading {
         font-size: 35px;
     }
@@ -20,10 +19,12 @@
         list-style: none;
     }
 
-    &__list-item {
-        font-size:  25px;
+    &__list {
+        &Item {
+            font-size: 25px;
+        }
 
-        &--link {
+        &Link {
             color: inherit;
             text-decoration: none;
 

@@ -1,22 +1,24 @@
 import React from 'react';
-import './header.scss';
+import style from './header.scss';
+
+console.log(style);
 
 const Header = () => (
-    <header className={"header"}>
-        <h2 className={"header__heading"}>WebPack Landing</h2>
-        <ul className={"header__list"}>
-            <li className={"header__list-item"}>
-                <a href="#" className={"header__list-item--link"}>
+    <header className={style.header}>
+        <h2 className={style.header__heading}>WebPack Landing</h2>
+        <ul className={style.header__list}>
+            <li className={style.header__listItem}>
+                <a href="#" className={style.header__listLink}>
                     Info
                 </a>
             </li>
-            <li className={"header__list-item"} >
-                <a href="#" className={"header__list-item--link"}>
+            <li className={style.header__listItem}>
+                <a href="#" className={style.header__listLink}>
                     Examples
                 </a>
             </li>
-            <li className={"header__list-item"}>
-                <a href="#" className={"header__list-item--link"}>
+            <li className={style.header__listItem}>
+                <a href="#" className={style.header__listLink}>
                     Plugins
                 </a>
             </li>

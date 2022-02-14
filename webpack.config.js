@@ -13,6 +13,11 @@ module.exports = {
             react: path.join(__dirname, 'node_modules', 'react'),
         },
     },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     module: {
         rules: [
             {
@@ -25,15 +30,18 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: "css-loader",
                         options: {
+                            importLoaders: 1,
                             url: false,
+                            modules: {
+                                localIdentName: (process.env.isProd && true ? "'[hash:base64:3]'" : "[local]") ,
+                            },
                         },
                     },
+                    'sass-loader',
                 ]
             },
             {

@@ -1,12 +1,12 @@
 import React from "react";
-import "./mainPageContent.scss";
+import style from "./mainPageContent.scss";
 
 const MainPageContent = () => (
-    <main className={'main'}>
+    <main className={style.main}>
 
-        <div className={"main__paragraph"}>
-            <h2 className={"main__header"}>LoremIpsum</h2>
-            <p className={"main__text"}>
+        <div className={style.main__paragraph}>
+            <h2 className={style.main__header}>LoremIpsum</h2>
+            <p className={style.main__text}>
                 Значимость этих проблем настолько очевидна,
                 что укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий
                 условий активизации.
@@ -18,10 +18,10 @@ const MainPageContent = () => (
                 участие в формировании соответствующий условий активизации.
             </p>
         </div>
-        <div className={"main__paragraph"}>
+        <div className={style.main__paragraph}>
 
-        <h2 className={"main__header"}>LoremIpsum</h2>
-        <p className={"main__text"}>
+        <h2 className={style.main__header}>LoremIpsum</h2>
+        <p className={style.main__text}>
             Значимость этих проблем настолько очевидна,
             что укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий
             активизации.
@@ -30,9 +30,9 @@ const MainPageContent = () => (
             занимаемых участниками в отношении поставленных задач.
         </p>
         </div>
-        <div className={"main__banner"}>
-            <h2 className={"main__banner-header"}>Lorem Webpack</h2>
-            <p className={"main__banner-content"}>
+        <div className={style.main__banner}>
+            <h2 className={style.main__bannerHeader}>Lorem Webpack</h2>
+            <p className={style.main__bannerContent}>
                 Значимость этих проблем настолько очевидна,
                 что укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий
                 активизации.
